@@ -1,0 +1,29 @@
+.song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.songImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.songDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.songName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.songDescription {
+    font-size: 1rem;
+    color: #555;
+}

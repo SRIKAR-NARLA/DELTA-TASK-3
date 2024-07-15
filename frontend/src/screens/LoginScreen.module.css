@@ -1,0 +1,79 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* LoginScreen.module.css */
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .loginForm {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .loginForm input {
+    width: calc(100% - 2rem);
+    padding: 0.75rem;
+    margin: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .loginForm button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .loginForm button:hover {
+    background-color: #ee5253;
+    transform: scale(1.05);
+  }
+  
+  .loginForm h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .loginForm p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

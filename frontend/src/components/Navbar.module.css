@@ -1,0 +1,73 @@
+/* Navbar.module.css */
+.navbar {
+    display: flex;
+    height:5vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #504c51;
+    padding: 1.5rem; /* Increased padding for a bigger navbar */
+    color: white;
+    font-size: 1.2rem; /* Increased font size for readability */
+    border-radius: 20px;
+  }
+  
+  .navbarBrand {
+    font-size: 2rem; /* Increased font size for the brand */
+  }
+  
+  .navbarMenu {
+    display: flex;
+    align-items: center;
+    margin-left: -1rem; /* Shift items slightly to the left */
+  }
+  
+  .navbarItem {
+    margin: 0 1rem;
+    padding:1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    text-decoration: none;
+    color:wheat;
+  }
+  
+  .navbarItem:hover {
+    background-color: #444; /* Darker background on hover */
+    color: #ddd; /* Lighter text on hover */
+  }
+  
+  .navbarDropdown {
+    margin: 0 1rem;
+    padding:1rem;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  .navbarDropdown:hover {
+    background-color: #444; 
+    color: #ddd; 
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: black;
+    border: 10px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdownItem {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f1f1f1; 
+  }
+  

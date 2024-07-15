@@ -23,10 +23,20 @@ const protect = asyncHandler(async(req,res,next)=>{
     }
 })
 
+// Artist middleware
+
+const artist = (req,res,next)=>{
+    if(req.user && req.user.role==='artist'){
+        next();
+    }else{
+        throw new AppError('Not authorized as admin',401)
+    }
+}
+
 // Admin middleware
 
 const admin = (req,res,next)=>{
-    if(req.user && req.user.isAdmin){
+    if(req.user && req.user.role==='admin'){
         next();
     }else{
         throw new AppError('Not authorized as admin',401)

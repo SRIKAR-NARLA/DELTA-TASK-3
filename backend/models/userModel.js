@@ -16,11 +16,20 @@ const userSchema = new schema({
         type:String,
         required:true
     },
-    isAdmin:{
-        type:Boolean,
+    role:{
+        type:String,
         required:true,
-        default:false
-    }
+        enum:['user','artist','admin'],
+        default:'user'
+    },
+    tofriends: [{
+        id:{ type: schema.Types.ObjectId, ref: 'User' },
+        status: { type: String, enum: ['pending', 'accepted', 'rejected'], default: 'pending' }
+    }],
+    fromfriends: [{
+        id:{ type: schema.Types.ObjectId, ref: 'User' },
+        status: { type: String, enum: ['pending', 'accepted', 'rejected'], default: 'pending' }
+    }]
 },{
     timestamps:true
 })

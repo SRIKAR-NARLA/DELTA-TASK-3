@@ -1,0 +1,35 @@
+.dashboardContainer {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  height: 95vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  grid-column: 1 / 4;
+}
+
+.middleSection {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 72vh;
+}
+
+.midcell{
+  width:50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-column: 1 / 4;
+  text-align: center;
+}
